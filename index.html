@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Cuaderno inútil</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #151719;
+            color: #e9e5dc;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 25px 8%;
+            border-bottom: 1px solid #343638;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #b8b5ae;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+
+        .portada {
+            padding: 90px 8% 75px;
+            max-width: 1000px;
+        }
+
+        .etiqueta {
+            color: #b49b78;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(48px, 9vw, 86px);
+            line-height: 1.05;
+            font-weight: normal;
+            margin: 22px 0;
+        }
+
+        .introduccion {
+            color: #aaa9a3;
+            max-width: 540px;
+            font-size: 17px;
+        }
+
+        .cita {
+            margin: 20px 8% 80px;
+            padding: 30px;
+            border-left: 2px solid #b49b78;
+            background: #1d2022;
+            max-width: 850px;
+        }
+
+        .cita p {
+            font-family: Georgia, serif;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        .cita span {
+            display: block;
+            margin-top: 12px;
+            color: #b49b78;
+            font-size: 13px;
+        }
+
+        .secciones {
+            padding: 20px 8% 80px;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        .rejilla {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .tarjeta {
+            background: #202426;
+            padding: 25px;
+            border: 1px solid #34383a;
+            transition: 0.2s;
+        }
+
+        .tarjeta:hover {
+            background: #292e30;
+            transform: translateY(-3px);
+        }
+
+        .tarjeta h3 {
+            font-family: Georgia, serif;
+            font-size: 21px;
+            font-weight: normal;
+            margin-bottom: 7px;
+        }
+
+        .tarjeta p {
+            color: #aaa9a3;
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 30px 8%;
+            border-top: 1px solid #343638;
+            color: #858782;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                display: block;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 0 12px 0 0;
+            }
+
+            .portada {
+                padding-top: 65px;
+            }
+
+            .rejilla {
+                grid-template-columns: 1fr;
+            }
+
+            .cita p {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">El Cuaderno inútil.</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#secciones">Secciones</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portada" id="inicio">
+            <div class="etiqueta">Un espacio cultural</div>
+
+            <h1>El Cuaderno<br>inútil.</h1>
+
+            <p class="introduccion">
+                Libros, imágenes, historias e ideas.
+                Un lugar para leer, mirar, jugar, escuchar
+                y pensar sin demasiadas prisas.
+            </p>
+        </section>
+
+        <section class="cita">
+            <p>
+                «Quien tiene un porqué para vivir
+                puede soportar casi cualquier cómo».
+            </p>
+            <span>— Friedrich Nietzsche</span>
+        </section>
+
+        <section class="secciones" id="secciones">
+            <div class="etiqueta">Explorar</div>
+            <h2>Entre estas páginas...</h2>
+
+            <div class="rejilla">
+
+                <article class="tarjeta">
+                    <h3>Bloc de notas</h3>
+                    <p>Artículos y reflexiones personales.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>La biblioteca de Alejandría</h3>
+                    <p>Libros, lecturas y reseñas.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>El séptimo arte</h3>
+                    <p>Cine y series.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>¡Here we go!</h3>
+                    <p>Videojuegos y mundos virtuales.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>La viñeta</h3>
+                    <p>Cómics y novelas gráficas.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>El Übermensch</h3>
+                    <p>Filosofía, Nietzsche y otros autores.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>El último violín</h3>
+                    <p>Música, canciones y compositores.</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        El Cuaderno inútil · Un lugar para las ideas.
+    </footer>
+
+</body>
+</html>
+
+            
