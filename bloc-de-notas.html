@@ -170,6 +170,24 @@ margin-bottom: 12px;
 .articulo .indice-articulo a:hover {
     color: #b69b72;
 }
+.compartir-articulo {
+    margin: 0 0 35px;
+}
+
+.compartir-articulo button {
+    background: transparent;
+    border: 1px solid #6f6558;
+    color: #b69b72;
+    padding: 10px 16px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.compartir-articulo button:hover {
+    border-color: #b69b72;
+    color: #e8e2d8;
+}
 .archivo {
     margin: 20px 0 45px;
     padding: 30px 0;
@@ -468,7 +486,11 @@ margin-bottom: 12px;
     </p>
 
    <div class="adorno-articulo"></div>
-
+<div class="compartir-articulo">
+    <button type="button" onclick="compartirArticulo()">
+        Compartir artículo
+    </button>
+</div>
 <nav class="indice-articulo">
     <p>En este artículo</p>
     <ul>
@@ -612,6 +634,24 @@ margin-bottom: 12px;
     <footer>
         El Cuaderno inútil · Un lugar para las ideas.
     </footer>
+<script>
+function compartirArticulo() {
+    const url = window.location.href.split('#')[0] + '#articulo-nietzsche';
 
+    if (navigator.share) {
+        navigator.share({
+            title: 'Nietzsche, ¿el vitalista?',
+            text: 'Te comparto este artículo de El Cuaderno inútil.',
+            url: url
+        }).catch(() => {});
+    } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+            alert('Enlace copiado. Ya puedes compartirlo.');
+        });
+    } else {
+        window.prompt('Copia este enlace para compartir el artículo:', url);
+    }
+}
+</script>
 </body>
 </html>
