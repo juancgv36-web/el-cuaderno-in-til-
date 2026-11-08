@@ -636,11 +636,29 @@ margin-bottom: 12px;
     </footer>
 <script>
 function compartirArticulo() {
-    const url = window.location.href.split('#')[0] + '#articulo-nietzsche';
+    const url = 'https://juancgv36-web.github.io/el-cuaderno-in-til-/compartir-nietzsche.html';
 
     if (navigator.share) {
         navigator.share({
             title: 'Nietzsche, ¿el vitalista?',
+            text: 'Te comparto este artículo de El Cuaderno inútil.',
+            url: url
+        }).catch(() => {});
+    } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+            alert('Enlace copiado. Ya puedes compartirlo.');
+        });
+    } else {
+        window.prompt('Copia este enlace para compartir el artículo:', url);
+    }
+}
+
+function compartirEstoicismo() {
+    const url = 'https://juancgv36-web.github.io/el-cuaderno-in-til-/compartir-estoicismo.html';
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'Estoicismo, decadencia y voluntad de poder',
             text: 'Te comparto este artículo de El Cuaderno inútil.',
             url: url
         }).catch(() => {});
