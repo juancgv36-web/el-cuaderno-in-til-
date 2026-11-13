@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La biblioteca de Alejandría | El Cuaderno inútil</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #151719;
+            color: #e9e5dc;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+        }
+
+        header {
+            padding: 25px 8%;
+            border-bottom: 1px solid #343638;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #b8b5ae;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+
+        .portada {
+            padding: 75px 8% 55px;
+            border-bottom: 1px solid #343638;
+        }
+
+        .etiqueta {
+            color: #b49b78;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(38px, 7vw, 65px);
+            font-weight: normal;
+            line-height: 1.15;
+            margin: 18px 0;
+        }
+
+        .introduccion {
+            color: #aaa9a3;
+            max-width: 650px;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 65px 25px 90px;
+        }
+
+        .articulo-etiqueta {
+            color: #b49b78;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-size: 38px;
+            font-weight: normal;
+            margin: 12px 0;
+        }
+
+        .subtitulo {
+            color: #aaa9a3;
+            font-family: Georgia, serif;
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        .cita {
+            padding: 25px;
+            margin: 30px 0;
+            background: #1d2022;
+            border-left: 2px solid #b49b78;
+            font-family: Georgia, serif;
+            font-size: 22px;
+            font-style: italic;
+        }
+
+        .autor-cita {
+            display: block;
+            color: #b49b78;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        .ficha {
+            background: #1d2022;
+            border: 1px solid #343638;
+            padding: 25px;
+            margin: 35px 0;
+        }
+
+        .ficha p {
+            margin-bottom: 8px;
+        }
+
+        .ficha strong {
+            color: #b49b78;
+        }
+
+        h3 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            font-weight: normal;
+            color: #c6aa7e;
+            margin: 40px 0 15px;
+        }
+
+        .articulo p {
+            color: #d0cdc5;
+            margin-bottom: 18px;
+        }
+
+        .articulo ol {
+            padding-left: 25px;
+            margin: 15px 0 25px;
+        }
+
+        .articulo li {
+            margin-bottom: 12px;
+            color: #d0cdc5;
+        }
+
+        .articulo li strong {
+            color: #c6aa7e;
+        }
+
+        .volver {
+            display: inline-block;
+            margin-top: 35px;
+            color: #b49b78;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 30px 8%;
+            border-top: 1px solid #343638;
+            color: #858782;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                display: block;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .portada {
+                padding-top: 55px;
+            }
+
+            h2 {
+                font-size: 31px;
+            }
+
+            .cita {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">El Cuaderno inútil.</div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="biblioteca.html">Biblioteca</a>
+        </nav>
+    </header>
+
+    <section class="portada">
+        <div class="etiqueta">Libros, lecturas y pensamientos</div>
+        <h1>La biblioteca<br>de Alejandría.</h1>
+
+        <p class="introduccion">
+            Un espacio para detenerse en los libros,
+            descubrir sus ideas y rescatar aquellas
+            lecturas que merecen quedarse.
+        </p>
+    </section>
+
+    <main>
+        <article class="articulo">
+
+            <div class="articulo-etiqueta">
+                Primera lectura · Filosofía
+            </div>
+
+            <h2>Meditaciones</h2>
+
+            <p class="subtitulo">
+                Marco Aurelio: una filosofía para vivir.
+            </p>
+
+            <div class="cita">
+                «El mundo es una mutación continua:
+                la vida, una imaginación».
+                <span class="autor-cita">— Marco Aurelio</span>
+            </div>
+
+            <div class="ficha">
+                <p><strong>Libro:</strong> Meditaciones.</p>
+                <p><strong>Autor:</strong> Marco Aurelio Antonino.</p>
+                <p><strong>Periodo:</strong> 161-180 d. C., durante su reinado.</p>
+                <p><strong>¿Recomendable?</strong> Sí.</p>
+            </div>
+
+            <h3>¿Por qué?</h3>
+
+            <p>
+                Es un libro sorprendentemente actual, aunque a primera
+                vista no lo parezca. Sus temas siguen teniendo mucho
+                que decirnos. De hecho, considero que resulta bastante
+                más útil que muchos manuales de autoayuda.
+            </p>
+
+            <p>
+                Habla de manera clara y sencilla, pero detrás de esa
+                aparente sencillez hay una profundidad considerable.
+            </p>
+
+            <p>
+                Para esta primera aproximación me he ayudado de
+                NotebookLM y de la inteligencia artificial, utilizando
+                una versión digital del libro y algunas notas personales
+                para elaborar un esquema general. Una nueva forma de
+                organizar las ideas y presentar la lectura.
+            </p>
+
+            <p>
+                Meditaciones se desarrolla a lo largo de doce libros.
+                De todos ellos, quiero destacar tres aspectos que,
+                a mi juicio, son especialmente importantes.
+            </p>
+
+            <h3>Las tres claves de Meditaciones</h3>
+
+            <h3>A) Actuar conforme a la naturaleza</h3>
+
+            <p>
+                «Todo fluye». El tiempo es como un río que arrastra
+                cuanto encuentra a su paso. Vivir conforme a la
+                naturaleza, como proponían los estoicos, significa
+                aceptar el orden de las cosas y actuar de manera
+                recta, noble y justa.
+            </p>
+
+            <p>
+                También implica no dejarnos dominar por las emociones,
+                no malgastar nuestra energía en aquello que escapa a
+                nuestro control y orientar nuestra conducta hacia
+                el bien común.
+            </p>
+
+            <p>Todo ello puede articularse alrededor de las cuatro virtudes cardinales:</p>
+
+            <ol>
+                <li><strong>Sabiduría:</strong> saber distinguir lo correcto y tomar buenas decisiones.</li>
+                <li><strong>Valor:</strong> afrontar los problemas y el miedo con fortaleza.</li>
+                <li><strong>Templanza:</strong> moderar los deseos y evitar los excesos.</li>
+                <li><strong>Justicia:</strong> tratar a los demás con respeto, dignidad y consideración.</li>
+            </ol>
+
+            <h3>B) Los valores como eje de nuestra conducta</h3>
+
+            <p>
+                En segundo lugar, destacaría la importancia de los
+                valores como fundamento de nuestra manera de vivir.
+                La cordura, la sinceridad, la justicia o el valor
+                no deberían ser simples conceptos abstractos, sino
+                principios que orientasen nuestras decisiones cotidianas.
+            </p>
+
+            <p>
+                No se trata únicamente de pensar correctamente,
+                sino de intentar vivir de acuerdo con aquello
+                que consideramos correcto.
+            </p>
+
+            <h3>C) Lo «cristiano antes de Cristo»</h3>
+
+            <p>
+                Por último, me llama la atención la presencia de una
+                serie de valores que, siglos después, también
+                encontraremos en la tradición cristiana: la paciencia,
+                la comprensión, la benevolencia, el trato afectuoso
+                y la importancia de las buenas palabras.
+            </p>
+
+            <p>
+                No pretendo establecer una equivalencia entre ambas
+                tradiciones, sino señalar cómo determinadas actitudes
+                y preocupaciones morales ya estaban presentes en el
+                pensamiento estoico mucho antes del nacimiento
+                del cristianismo.
+            </p>
+
+            <h3>Una lectura indispensable</h3>
+
+            <p>
+                En definitiva, Meditaciones es uno de esos libros
+                que merece la pena tener cerca. No necesariamente
+                para leerlo de una sola vez, sino para volver a él,
+                detenerse en sus páginas y encontrar nuevas
+                interpretaciones con el paso del tiempo.
+            </p>
+
+            <p>
+                Un libro básico e indispensable en cualquier estantería.
+            </p>
+
+            <p style="margin-top: 45px; color: #b49b78;">
+                Juan Carlos García Vega
+            </p>
+
+        </article>
+
+        <a href="index.html" class="volver">
+            ← Volver a la página principal
+        </a>
+    </main>
+
+    <footer>
+        El Cuaderno inútil · Un lugar para las ideas.
+    </footer>
+
+</body>
+</html>
